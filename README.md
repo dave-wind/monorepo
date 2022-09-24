@@ -2,6 +2,7 @@
 > 同时管理多个仓库 包含 ui hooks ts 业务项目 pnpm 7+版本
 
 ```js
+0. pnpm 介绍可看官网, pnpm + workspace 可以替代 lerna 管理多个包
 
 1. pnpm init // 类似 npm init 会创建 package.json
 
@@ -56,15 +57,16 @@ pnpm i -r --filter vite-app // pkg.json name: vite-app
 运行:
 pnpm --filter vite-app start // 根据 pkg scripts 脚本名称来 这里是: scripts:dev
 
-就会看到依赖的包 效果
-
+就会看到依赖的包 效果:
 ...
+```
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/28003460/192110690-e8e84701-8094-4e39-9e40-b5f44540d1ea.png">
 
 
+```js
 注意⚠️: pnpm 7+版本 最好先切换到目标workspace 在 运行 pkg 脚本
-
 参考: 
 https://pnpm.io/zh/
 https://segmentfault.com/a/1190000008832423 // npm scripts 知识
-
 ```
+
