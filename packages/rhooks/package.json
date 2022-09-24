@@ -1,0 +1,20 @@
+{
+  "name": "@doors/rhooks",
+  "version": "1.0.0",
+  "description": "react hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@doors/commonn": "workspace:../common",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "author": "dave-wind",
+  "license": "ISC"
+}

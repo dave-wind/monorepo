@@ -1,0 +1,33 @@
+{
+  "name": "@doors/common",
+  "version": "1.0.0",
+  "description": "monorepo common share library for all project",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "exports": {
+    "./types": {
+      "import": "./dist/types/index.mjs",
+      "require": "./dist/types/index.js"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.mjs",
+      "require": "./dist/utils/index.js"
+    },
+    "./configs/*.json": "./configs/*.json",
+    "./configs/*": {
+      "require": "./dist/configs/*.js",
+      "import": "./dist/configs/*.mjs",
+      "types": "./dist/configs/*.d.ts"
+    }
+  },
+  "author": "dave-wind",
+  "license": "ISC",
+  "dependencies": {
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.3"
+  }
+}

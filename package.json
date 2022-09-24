@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Manage a collection of vite rollup webpack react vue typescript repositories with pnpm monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:common": "pnpm -F @doors/common run build",
+    "all:update":"pnpm -r update -i -L"
+  },
+  "packageManager": "pnpm@7.12.2",
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,13 @@
+dist/
+lib/
+es/
+.next/
+node_modules/
+.DS_Store
+
+node_modules/**
+
+apps/**/node_modules
+apps/**/node_modules/**
+packages/**/node_modules
+packages/**/node_modules/**
