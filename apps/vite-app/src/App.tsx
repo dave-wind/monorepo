@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import { isClient } from "@doors/common/utils"
+import { isClient } from "@DAO/common/utils"
 function App() {
   const [count, setCount] = useState(0)
 

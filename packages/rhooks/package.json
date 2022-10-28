@@ -1,5 +1,5 @@
 {
-  "name": "@doors/rhooks",
+  "name": "@DAO/rhooks",
   "version": "1.0.0",
   "description": "react hooks",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@doors/commonn": "workspace:../common",
+    "@DAO/commonn": "workspace:../common",
     "react": "16.9.0",
     "react-dom": "16.9.0"
   },

@@ -1,0 +1,43 @@
+<script setup lang="ts">
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import HelloWorld from './components/HelloWorld.vue'
+import { isClient } from "@DAO/common/utils"
+import { EnvProps } from "@DAO/common/types"
+import { ref, reactive } from 'vue'
+
+const client = ref(isClient)
+const obj: EnvProps = reactive({
+  ios: 'ios',
+  android: 'android',
+  h5: 'h5',
+  pc: 'pc'
+})
+</script>
+
+<template>
+  <div>
+    is Client: {{ client }}
+  </div>
+  Type test: 
+  <div v-for="key in obj">
+      <li>{{key}}</li>
+  </div>
+  <HelloWorld msg="Vite + Vue" />
+</template>
+
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style>

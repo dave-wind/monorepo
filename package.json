@@ -5,9 +5,10 @@
   "description": "Manage a collection of vite rollup webpack react vue typescript repositories with pnpm monorepo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:common": "pnpm -F @doors/common run build",
-    "all:update":"pnpm -r update -i -L"
+    "dev:r": "pnpm --filter vite-app start",
+    "dev:v": "pnpm --filter vite-vue dev",
+    "build:common": "pnpm -F @DAO/common run build",
+    "all:update": "pnpm -r update -i -L"
   },
   "packageManager": "pnpm@7.12.2",
   "engines": {
@@ -16,5 +17,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@DAO/common": "workspace:^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4",
+    "vue": "^3.2.41"
+  }
 }
