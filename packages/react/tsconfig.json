@@ -1,5 +1,5 @@
 {
-  "extends": "@dao/common/configs/tsconfig.common.json",
+  "extends": "../common/configs/tsconfig.common.json",
   "compilerOptions": {
     "module": "esnext",
     "isolatedModules": true,

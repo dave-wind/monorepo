@@ -8,7 +8,7 @@ export default defineConfig([
     input: 'components/index.ts',
     output: [
       {
-        name,
+        name: 'neopark-vue',
         file: './dist/components/index.js',
         format: 'umd',
         exports: 'named',

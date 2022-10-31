@@ -1,7 +1,10 @@
 {
-  "name": "@dao/vue3",
+  "name": "@neopark/vue3",
   "version": "1.0.0",
   "description": "vue3 Components",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -19,7 +22,7 @@
     }
   },
   "dependencies": {
-    "@dao/commonn": "workspace:../common"
+    "@neopark/commonn": "workspace:../common"
   },
   "peerDependencies": {},
   "devDependencies": {

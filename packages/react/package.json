@@ -1,7 +1,17 @@
 {
-  "name": "@dao/react",
-  "version": "1.0.0",
+  "name": "@neopark/react",
+  "version": "1.0.3",
   "description": "react hooks and Components",
+  "repository": "https://github.com/dave-wind/monorepo",
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -10,8 +20,8 @@
     "prepare": "npm run build"
   },
   "browser": {
-    "./components": "./es/components/index.js",
-    "./hooks": "./es/hooks/index.js"
+    "./components": "./dist/components/index.js",
+    "./hooks": "./dist/hooks/index.js"
   },
   "exports": {
     "./components": {
@@ -24,7 +34,7 @@
     }
   },
   "dependencies": {
-    "@dao/commonn": "workspace:../common"
+    "@neopark/common": "workspace:../common"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
@@ -57,6 +67,7 @@
     "react",
     "hooks"
   ],
+  "sideEffects": false,
   "author": "dave-wind",
   "license": "ISC"
 }

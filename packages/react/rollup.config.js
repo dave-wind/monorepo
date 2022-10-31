@@ -33,7 +33,7 @@ export default defineConfig([
     input: 'hooks/index.ts',
     output: [
       {
-        name,
+        name: 'neopark-react',
         file: './dist/hooks/index.js',
         format: 'umd',
         globals: {

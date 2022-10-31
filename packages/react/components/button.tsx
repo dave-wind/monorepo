@@ -1,7 +1,7 @@
 import React from 'react'
 import { IBaseProps } from '@DAO/common/types'
 
-function DAOButton(props: IBaseProps) {
+function NeoButton(props: IBaseProps) {
   return (
     <div style={{ color: props.color ? props.color : 'inherit' }}>
       {props.title ? props.title : 'button'}
@@ -9,4 +9,4 @@ function DAOButton(props: IBaseProps) {
   )
 }
 
-export default DAOButton
+export default NeoButton
