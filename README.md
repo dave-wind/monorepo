@@ -60,4 +60,4 @@ pnpm --filter @neopark/react publish
 
 #### NPM repository
 
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/28003460/199077325-fc2e5918-0933-4ed0-b782-277c3ec21978.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/28003460/199077325-fc2e5918-0933-4ed0-b782-277c3ec21978.png">
