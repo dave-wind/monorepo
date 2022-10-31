@@ -1,5 +1,5 @@
 {
-  "name": "@DAO/react",
+  "name": "@dao/react",
   "version": "1.0.0",
   "description": "react hooks and Components",
   "main": "index.js",
@@ -24,7 +24,7 @@
     }
   },
   "dependencies": {
-    "@DAO/commonn": "workspace:../common"
+    "@dao/commonn": "workspace:../common"
   },
   "peerDependencies": {
     "react": ">=16.9.0",

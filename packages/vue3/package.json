@@ -1,5 +1,5 @@
 {
-  "name": "@DAO/vue3",
+  "name": "@dao/vue3",
   "version": "1.0.0",
   "description": "vue3 Components",
   "main": "index.js",
@@ -19,7 +19,7 @@
     }
   },
   "dependencies": {
-    "@DAO/commonn": "workspace:../common"
+    "@dao/commonn": "workspace:../common"
   },
   "peerDependencies": {},
   "devDependencies": {

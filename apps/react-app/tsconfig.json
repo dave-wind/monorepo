@@ -1,5 +1,5 @@
 {
-  "extends": "@DAO/common/configs/tsconfig.common.json",
+  "extends": "@dao/common/configs/tsconfig.common.json",
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],

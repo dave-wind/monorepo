@@ -2,8 +2,8 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-import { isClient } from "@DAO/common/utils"
-import { EnvProps } from "@DAO/common/types"
+import { isClient } from '@dao/common/utils'
+import { EnvProps } from '@dao/common/types'
 import { ref, reactive } from 'vue'
 
 const client = ref(isClient)
@@ -16,12 +16,10 @@ const obj: EnvProps = reactive({
 </script>
 
 <template>
-  <div>
-    is Client: {{ client }}
-  </div>
-  Type test: 
+  <div>is Client: {{ client }}</div>
+  Type test:
   <div v-for="key in obj">
-      <li>{{key}}</li>
+    <li>{{ key }}</li>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>

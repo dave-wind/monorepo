@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import { isClient } from '@DAO/common/utils'
-import { Button } from '@DAO/react/components'
-import { useDidUpdateEffect } from '@DAO/react/hooks'
+import { isClient } from '@dao/common/utils'
+import { Button } from '@dao/react/components'
+import { useDidUpdateEffect } from '@dao/react/hooks'
 
 function App() {
   const [count, setCount] = useState(0)

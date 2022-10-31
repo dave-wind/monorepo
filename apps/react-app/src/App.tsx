@@ -1,5 +1,5 @@
-import { sum } from '@DAO/common/utils'
-import { Button } from '@DAO/react/components'
+import { sum } from '@dao/common/utils'
+import { Button } from '@dao/react/components'
 
 function App() {
   return (

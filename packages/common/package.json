@@ -1,5 +1,5 @@
 {
-  "name": "@DAO/common",
+  "name": "@dao/common",
   "version": "1.0.0",
   "description": "monorepo common share library for all project",
   "main": "index.js",

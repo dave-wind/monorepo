@@ -7,7 +7,7 @@
   "scripts": {
     "dev:r": "pnpm --filter vite-app start",
     "dev:v": "pnpm --filter vite-vue dev",
-    "build:common": "pnpm -F @DAO/common run build",
+    "build:common": "pnpm -F @dao/common run build",
     "all:update": "pnpm -r update -i -L"
   },
   "packageManager": "pnpm@7.12.2",
@@ -19,9 +19,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@DAO/common": "workspace:*",
-    "@DAO/react": "workspace:*",
-    "@DAO/vue3": "workspace:*",
+    "@dao/common": "workspace:*",
+    "@dao/react": "workspace:*",
+    "@dao/vue3": "workspace:*",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "vue": "^3.2.41"

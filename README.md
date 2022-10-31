@@ -26,7 +26,7 @@
 // 当使用workspace协议声明依赖，pnpm 只会从此 workspace 链接所需包,额外包不会install
 1.link-workspace-packages= false.
 通俗解释就是：设置为false 当我想在一个项目 安装 packages的公共模块：比如common 执行如下会报错：
-pnpm -r --filter vite-vue install @DAO/common // 因为他会从 远程npm仓库去找 @DAO/common 而不是从本地
+pnpm -r --filter vite-vue install @dao/common // 因为他会从 远程npm仓库去找 @dao/common 而不是从本地
 
 2.如果 strict-peer-dependencies= true 树中缺少对等依赖项或对等依赖项 就会报错, 设置false 就不会
 3.shamefully-hoist = true //（eg:安装vue3.0+ node_modules下分别包含组合式包+ 传统选项式包）这里是把node_modules/pnpm下的@vue 组合式api依赖提升到node_modules下 可直接引入调用
@@ -35,12 +35,12 @@ pnpm -r --filter vite-vue install @DAO/common // 因为他会从 远程npm仓库
 5.packages 安装 子包
   1.npm init;
   //  以packages/common 公共包为例:
-  2.pnpm install -r --filter @DAO/common  // 类似 npm init
+  2.pnpm install -r --filter @dao/common  // 类似 npm init
 
 
 6.构建build 公共资源
-// 7+版本 先切换 再执行 scripts 命令; 前提是 @DAO/common(package/common) pkg.json 有 build指令
-eg: pnpm --filter @DAO/common run build
+// 7+版本 先切换 再执行 scripts 命令; 前提是 @dao/common(package/common) pkg.json 有 build指令
+eg: pnpm --filter @dao/common run build
 
 
 7.工作区内 包与包之间引用 是通过 symbolic链接资源
@@ -48,17 +48,17 @@ eg: pnpm --filter @DAO/common run build
     修改目标包 package.json 通过相对路径 引用
     比如 packages/rhooks包 依赖 packages/common 包,相对路径去写 pkg:
     "dependencies": {
-        "@DAO/common": "workspace:../common",
+        "@dao/common": "workspace:../common",
     }
-    pnpm -r --filter @DAO/react // 安装依赖 -r: pnpm rebuild 重新build
+    pnpm -r --filter @dao/react // 安装依赖 -r: pnpm rebuild 重新build
 
-    b.ui库 待续..
+    b.ui库
 
 
 8.运行 apps内 业务项目: (vite-app)
 先增加pkg workspace 依赖:
   "dependencies": {
-    "@DAO/common": "workspace:*" // 硬链接.pnpm-store  vite-app node_modules下就会找到该依赖
+    "@dao/common": "workspace:*" // 硬链接.pnpm-store  vite-app node_modules下就会找到该依赖
   },
 
 先安装:
@@ -96,9 +96,9 @@ pnpm --filter vite-vue dev // 利用filter 切换 运行package.json  scripts脚
 ```js
 1.举例：
  // 表示把package的 公共包 安装在根目录 root node_modules
-pnpm install @DAO/common  -w
+pnpm install @dao/common  -w
 
-2.pnpm -r --filter @DAO/common build 重新build完
+2.pnpm -r --filter @dao/common build 重新build完
 
 在 apps demo里 直接生效  软连接~ 效率很高
 
