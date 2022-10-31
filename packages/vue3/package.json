@@ -1,0 +1,48 @@
+{
+  "name": "@DAO/vue3",
+  "version": "1.0.0",
+  "description": "vue3 Components",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "rollup --config rollup.config.js --watch",
+    "build": "rollup --config rollup.config.js",
+    "prepare": "npm run build"
+  },
+  "browser": {
+    "./components": "./es/components/index.js"
+  },
+  "exports": {
+    "./components": {
+      "import": "./es/components/index.js",
+      "require": "./lib/components/index.cjs"
+    }
+  },
+  "dependencies": {
+    "@DAO/commonn": "workspace:../common"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/node": "^7.14.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.5",
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/runtime": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.1",
+    "rollup": "^2.60.2",
+    "postcss": "^8.4.5",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "typescript": "^4.5.2"
+  },
+  "keywords": [
+    "vue",
+    "hooks"
+  ],
+  "author": "dave-wind",
+  "license": "ISC"
+}

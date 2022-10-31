@@ -21,6 +21,9 @@
   "dependencies": {
     "@DAO/common": "workspace:*",
     "@DAO/react": "workspace:*",
+    "@DAO/vue3": "workspace:*",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "vue": "^3.2.41"
   },
   "devDependencies": {
