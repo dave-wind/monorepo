@@ -1,5 +1,5 @@
 import React from 'react'
-import { IBaseProps } from '@DAO/common/types'
+import { IBaseProps } from '@neopark/common/types'
 
 function NeoButton(props: IBaseProps) {
   return (

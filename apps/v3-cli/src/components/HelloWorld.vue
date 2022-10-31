@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { isClient } from '@dao/common/utils'
+import { isClient } from '@neopark/common/utils'
 export default {
   components: {},
   name: 'HelloWorld',

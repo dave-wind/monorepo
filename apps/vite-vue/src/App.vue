@@ -2,8 +2,8 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-import { isClient } from '@dao/common/utils'
-import { EnvProps } from '@dao/common/types'
+import { isClient } from '@neopark/common/utils'
+import { EnvProps } from '@neopark/common/types'
 import { ref, reactive } from 'vue'
 
 const client = ref(isClient)

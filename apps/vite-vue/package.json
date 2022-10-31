@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dao/common": "workspace:^1.0.0",
+    "@neopark/common": "workspace:*",
     "vue": "^3.2.41"
   },
   "devDependencies": {
